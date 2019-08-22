@@ -1,0 +1,1 @@
+A minimum of four colors is required to solve this problem. The explanation for this is due to the four-color theorem demonstrated by Kenneth Appel and Wolfgang Haken in 1976. The idea of the algorithm that would solve this problem would be to turn a map into a connected graph. the query between the vertices is made. The idea is that adjacent vertices cannot have the same color.
