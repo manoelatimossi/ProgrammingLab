@@ -21,9 +21,15 @@ def caminho(grafo, inicio):
         pilha.pop()
   pesos_caminho = visitado
   count = 0
-  print(pesos_caminho)
   for keys in grafo.keys():
-    pesos_caminho[count] = grafo[keys].values()
-    count = count +1
-  return pesos_caminho
+    for j in grafo[keys]:
+        pesos_caminho[count] = grafo[keys][j]
+        count = count + 1
+  print(pesos_caminho)
+  valor = 0
+  x = 0
+  for i in range(len(pesos_caminho)):
+    valor = valor + pesos_caminho[x]
+    x = x + 1
+  return valor
 print(caminho(linearlandia, '1'))
